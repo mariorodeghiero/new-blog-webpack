@@ -16,6 +16,11 @@ var HWPConfig = new HtmlWebpackPlugin({
     inject: "body"
 });
 
+var HWPConfigAbout = new HtmlWebpackPlugin({
+  filename: 'about.html',
+  template : __dirname + '/about.html',
+});
+
 module.exports = {
     entry: {
         app: [
@@ -58,6 +63,7 @@ module.exports = {
     },
     plugins: [
         HWPConfig,
+        HWPConfigAbout,
         new CleanWebpackPlugin(['dist'], {
             root: __dirname,
             verbose: true,
@@ -65,7 +71,7 @@ module.exports = {
         }),
         new ExtractTextPlugin('[name].css'),
         new PurifyCSSPlugin({
-            paths: glob.sync(path.join(__dirname, 'index.html')),
+            paths: glob.sync(path.join(__dirname, '/*.html')),
             minimize: inProduction
         }),
 
