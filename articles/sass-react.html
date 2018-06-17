@@ -25,9 +25,6 @@
   <meta property="article:tag" content="created-react-app, sass, react, sass-loader, react.js, npx">
 
   <meta itemprop="description" content="Como integrar Sass e React.js">
-
-  <!-- <link href="../../app.css" rel="stylesheet"> -->
-
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107916783-1"></script>
   <script>
@@ -43,22 +40,17 @@
 </head>
 
 <body>
-  <div class="voltar">
-    <a href="https://mariorodeghiero.com">
-      <img src="../../img/back.png" alt="voltar">
-    </a>
-    <p id="mostrar">Voltar ?</p>
-  </div>
 
   <article>
 
     <a href="https://github.com/MarioRodeghiero">
-      <h5>
-        <img src="../../img/github-logo.png" alt="icone github"> Autor: MárioRodeghiero
+
+      <h5 class="author">
+        <img src="../src/img/github-logo.png" alt="icone github"> Autor: MárioRodeghiero
       </h5>
     </a>
 
-    <h5>Date: 05/06/2018</h5>
+    <h5 class="publish-date">Data: 05/06/2018</h5>
     <h1>Sass + React.js</h1>
     <h4>"Como integrar Sass e React.js"</h4>
 
@@ -76,7 +68,7 @@
     <p class="command-line">$ npm install -g npx</p>
 
 
-    <h2>Instalando created-react-app</h2>
+    <h2 class="sub-title">Instalando created-react-app</h2>
     <p>
       Após ter os pré-requisitos instalado em seu computador, para criarmos o projeto, basta rodar o seguinte comando abaixo, substituindo
       o
@@ -84,7 +76,7 @@
     </p>
     <p class="command-line">$ npx created-react-app nome-do-projeto</p>
 
-    <img class="screenShot" src="../../img/screenShot-npx.png" alt="screen Shot do comando created-react-app">
+    <img class="screenShot" src="../src/img/screenShot-npx.png" alt="screen Shot do comando created-react-app">
 
     <p> Após executar o comando, devemos entrar na pasta do projeto e executar mais alguns comandos para instalar e integrar
       o Sass com o react.</p>
@@ -94,12 +86,12 @@
     <span>ou</span>
     <p class="command-line">$ npm install sass-loader node-sass --save-dev</p>
 
-    <h2>Passo 1</h2>
+    <h2 class="sub-title">Passo 1</h2>
     <p>Agora que já instalamos os módulos necessários, devemos ejetar os arquivos de configurações do created-react-app e realizar
       as alterações necessárias para trabalharmos com Sass.</p>
     <p class="command-line">$ npm run eject</p>
 
-    <h2>Passo 2</h2>
+    <h2 class="sub-title">Passo 2</h2>
     <p>Em seguida vamos editar os dois arquivos abaixo, onde estão as configurações do webpack na pasta
       <b>"/config"</b>.
       <br/> O primeiro é o arquivo de desenvolvimento, o segundo é o arquivo de produção.</p>
@@ -109,7 +101,7 @@
     <li>
       <b>Arquivo de produção:</b> webpack.config.prod.js</li>
 
-    <h2>Editando o arquivo de desenvolvimento</h2>
+    <h2 class="sub-title">Editando o arquivo de desenvolvimento</h2>
     <p>Abra o arquivo de
       <b>desenvolvimento</b> e depois role o scroll até localizar onde estão as configurações do
       <b>"css"</b>, como mostrado no código abaixo:</p>
@@ -145,7 +137,7 @@ test: /\.scss$/,
       },
         </code></pre>
 
-    <h2>Editando o arquivo de produção</h2>
+    <h2 class="sub-title">Editando o arquivo de produção</h2>
     <p>Já no arquivo de
       <b>produção</b>, você vai encontrar a seguinte configuração abaixo: </p>
 
@@ -201,7 +193,7 @@ test: /\.scss$/,
             },
         </code></pre>
 
-    <h2>Passo 3</h2>
+    <h2 class="sub-title">Passo 3</h2>
     <p> Agora você pode deletar os arquivos
       <b>".css"</b> e criar seus arquivos
       <b>".scss"</b> em qualquer lugar, dentro da pasta

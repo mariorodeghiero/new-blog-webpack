@@ -26,7 +26,7 @@ var HWPConfigArticle = new HtmlWebpackPlugin({
 });
 
 
-var entry1 = ['article', 'chart-js'];
+var entry1 = ['sass-react', 'chart-js', 'copy-right', 'object-literal', 'spread-operator'];
 
 var entryHtmlPlugins = entry1.map(function (entryName) {
   return new HtmlWebpackPlugin({
