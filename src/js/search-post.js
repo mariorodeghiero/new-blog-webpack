@@ -5,8 +5,7 @@ const findPost = document.getElementById("search-input");
 findPost.addEventListener("keyup", findMatches);
 
 function getPosts() {
-  // fetch('https://mariorodeghiero.herokuapp.com/')
-  fetch("../db/posts.json")
+  fetch("./posts.json")
     .then(res => res.json())
     .then(data => {
       let output = "";

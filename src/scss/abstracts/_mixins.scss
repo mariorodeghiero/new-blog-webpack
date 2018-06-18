@@ -24,9 +24,56 @@
       p {
         font-size: 0.8rem;
       }
-      h4 {
-        font-size: 0.6rem !important;
+      span {
+        font-size: 0.6rem;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  article {
+    font-size: 0.85em;
+    line-height: 1.7em;
+    margin-bottom: 30px;
+    padding: 8%;
+    p {
+      font-size: 0.8rem;
+    }
+    h1 {
+      font-size: 0.6rem;
+      line-height: 3.5em;
+      letter-spacing: 0;
+    }
+    h4 {
+      letter-spacing: 0.3px;
+      margin: -2.7em auto 4em;
+    }
+    h5 {
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 502px) {
+  article {
+    width: auto;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    p {
+      font-size: 0.8rem;
+    }
+    h1 {
+      font-size: 2.4rem;
+      line-height: 1.4em;
+      letter-spacing: 0;
+    }
+    h4 {
+      letter-spacing: 0;
+      margin: 0.4em auto 3em;
+    }
+    h5 {
+      font-size: 1em;
     }
   }
 }
