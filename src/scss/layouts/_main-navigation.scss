@@ -370,7 +370,7 @@ article {
 .inp-search {
   font: 15px/24px "Lato", Arial, sans-serif;
   width: 50%;
-  margin-top: 80px;
+  margin-top: 40px;
   box-sizing: border-box;
   letter-spacing: 1px;
   background: #eee;
@@ -388,33 +388,6 @@ article {
   position: relative;
 }
 
-/* start footer */
-.footer {
-  height: 80px;
-  background-color: #00b4cc;
-  text-align: center;
-  padding: 16px;
-  .social-icons {
-    margin-left: -20px;
-    li {
-      padding-left: 10px;
-      display: inline-block;
-      .github,
-      .linkedin,
-      .twitter {
-        width: 48px;
-        height: 48px;
-        transition: all ease 0.5s;
-        &:hover {
-          transition: all ease 0.5s;
-          opacity: 0.4;
-        }
-      }
-    }
-  }
-}
-
-/* end footer */
 /* Start Toggle */
 
 #output {
@@ -422,7 +395,8 @@ article {
 }
 
 .article {
-  margin-left: 10%;
+  margin: 0 auto;
+  width: 80%;
   a {
     color: inherit;
     &:hover {
@@ -436,11 +410,13 @@ article {
     width: 80%;
     h1 {
       padding-top: 20px;
+      font-size: 2rem;
       line-height: 1.6rem;
       text-align: center;
     }
     p {
       text-align: center;
+      opacity: 0.7;
     }
     span {
       color: #778899;
