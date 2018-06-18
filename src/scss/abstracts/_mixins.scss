@@ -18,15 +18,40 @@
   }
   .article {
     .card {
+      width: 100% !important;
+      // height: 230px;
       h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem !important;
       }
       p {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
       }
       span {
         font-size: 0.6rem;
       }
+      .container-tag-post {
+        .tag-post {
+          li {
+            display: inline !important;
+            list-style: none;
+            padding: 2px 4px !important;
+            border-radius: 2px !important;
+          }
+        }
+      }
+    }
+  }
+  .search {
+    ul {
+      li {
+        font-size: 0.4rem !important;
+      }
+      hr {
+        width: 60% !important;
+      }
+    }
+    .inp-search {
+      width: 60% !important;
     }
   }
 }
