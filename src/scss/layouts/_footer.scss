@@ -1,26 +1,27 @@
-
 .footer {
-    background-color: #eee;
-    text-align: center;
-    width: 100%;
-    .social-icons {
-        margin: 0 auto;
-        li {
-            margin-right: 10px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            display: inline-block;
-            .github,
-            .linkedin,
-            .twitter {
-                width: 28px;
-                height: 28px;
-                transition: all ease 0.5s;
-                &:hover {
-                    transition: all ease 0.5s;
-                    opacity: 0.3;
-                }
-            }
+  // background-color: #eee;
+  background-color: #ffffff;
+  border-top: 1px solid #eee;
+  text-align: center;
+  width: 100%;
+  .social-icons {
+    margin: 0 auto;
+    li {
+      margin-right: 10px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      display: inline-block;
+      .github,
+      .linkedin,
+      .twitter {
+        width: 28px;
+        height: 28px;
+        transition: all ease 0.5s;
+        &:hover {
+          transition: all ease 0.5s;
+          opacity: 0.3;
         }
+      }
     }
+  }
 }

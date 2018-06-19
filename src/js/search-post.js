@@ -5,7 +5,7 @@ const findPost = document.getElementById("search-input");
 findPost.addEventListener("keyup", findMatches);
 
 function getPosts() {
-  fetch("./posts.json")
+  fetch("./db/posts.json")
     .then(res => res.json())
     .then(data => {
       let output = "";
