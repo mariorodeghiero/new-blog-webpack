@@ -48,12 +48,12 @@
 
   <article>
     <a href="https://github.com/MarioRodeghiero">
-      <h5>
-        <img src="../img/github-logo.png" alt="icone github"> Autor: MárioRodeghiero
+      <h5 class="author">
+        <img src="../src/img/github-logo.png" alt="icone github"> Autor: MárioRodeghiero
       </h5>
     </a>
 
-    <h5>Date: 09/10/2017</h5>
+    <h5 class="publish-date">Date: 09/10/2017</h5>
     <h1>CopyRight Automático</h1>
     <h4>"Atualizar data do CopyRight de forma automatica"</h4>
 
@@ -64,15 +64,15 @@
       <br> Agora deu de blá-blá-blá e Bora lá! Vamos falar sobre o objetivo do post “Atualizar data do CopyRight de forma automatica”.
     </p>
 
-    <h2>Estrutura de arquivos</h2>
+    <h2 class="sub-title">Estrutura de arquivos</h2>
     <p>
       Caso alguém tenha duvida sobre a estrutura de arquivos utilizada, segue a saída do comando “tree”, aplicado no terminal do
       computador.
     </p>
 
-    <img class="screenShot" src="../img/screenShot-copyright.png" alt="screen Shot da estrutura de arquivos">
+    <img class="screenShot" src="../src/img/screenShot-copyright.png" alt="screen Shot da estrutura de arquivos">
 
-    <h2>Código HTML</h2>
+    <h2 class="sub-title">Código HTML</h2>
     <p>
       Para exiber o copyright, criei um arquivo chamado “index.html” na pasta raiz(exemples-myBlog) e logo abaixo da tag ”body”,
       foi criada a tag “footer” e inserido o id="copy", assim, vamos conseguir utilizar o id em nosso código javascript.
@@ -80,17 +80,17 @@
     </p>
     <pre><code class="language-html">
 &lt;html&gt;
-&lt;body&gt;
+  &lt;body&gt;
 
-&lt;footer id="copy"&gt;
-&lt;footer&gt;
+    &lt;footer id="copy"&gt;
+    &lt;footer&gt;
 
-&lt;script src="js/copy.js"&gt;&lt;script&gt;
-&lt;/body&gt;
+    &lt;script src="js/copy.js"&gt;&lt;script&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 		</code></pre>
 
-    <h2>Código JS</h2>
+    <h2 class="sub-title">Código JS</h2>
     <p>
       A primeira coisa a ser feita no código javascript, é criar um novo objeto “Date()” e vamos armazenar na variavel "date".
       Fizemos isso, porque “Date()” nos retorna uma informação muito completa, algo parecido com isso: “Mon Oct 09 2017 15:27:03
